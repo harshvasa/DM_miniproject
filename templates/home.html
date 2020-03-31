@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 100px;
+        }   
+        .bg {
+        /* The image used */
+            /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .card {
+            display: inline-block;
+            border-radius: 30px;
+            width: 400px;
+            border-color: #068931;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .d-block {
+            height: 20vw;
+            object-fit: cover;
+        }
+
+        .card-body {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+    </style>
+</head>
+
+<body class="bg" style="background-image:url('https://wallpaperaccess.com/full/1108515.jpg')">
+    <div style=" text-align: center;color: white;">
+    <i><h2><u>FIFA 2019 Player Classification & Prediction of Overall Rating.</u></h2></i>
+  
+    <p><b><center>This is a webpage about classfying and predicting FIFA 2019 players based on their statistics using data mining techniques, regression & classifcation techniques of machine learning.</center></b></p>
+    </div>
+    <br>
+    <br>
+
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="d-flex justify-content-center pl-3 pt-3 pb-3">
+        <div style="border-color: black" class="card mr-5">
+            <img class="card-img-top" src="{% static 'images/nb.png'%}">
+
+            <div class="card-body">
+                <h3 class="card-title"><i><b>Naive Bayes Classification</b></i></h3>
+                <a href="{% url 'nb'%}" class="btn btn-primary float-right mb-2" style="background-color:lightcoral;border-color:black;color: black;">View Results</a>
+            </div>
+        </div>
+
+        <div style="border-color: black" class="card mr-5">
+            <img class="card-img-top" src="{% static 'images/rf.png'%}">
+
+            <div class="card-body">
+                <h3 class="card-title"><i><b>Random Forest Regression</b></i></h3>
+                <a href="{% url 'rf'%}" class="btn btn-primary float-right mb-2" style="background-color:lightcoral;border-color:black;color: black;">View Results</a>
+            </div>
+        </div>
+
+        <div  style="border-color: black" class="card mr-3">
+            <img class="card-img-top" src="{% static 'images/lr.png'%}">
+
+            <div class="card-body">
+                <h3 class="card-title"><i><b>Linear Regression</b></i></h3>
+                <a href="{% url 'lr'%}" class="btn btn-primary float-right mb-2" style="background-color:lightcoral;border-color:black;color: black;">View Results</a>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h3><center><i><u>DATA VISUALIZATION</u></i></center></h3>
+<div style="background-color: #17BDE8;"class="text-center">
+    
+    <br><img src="{% static 'images/heatmap.png'%}" />
+    <h6>
+        <span class="font-weight-bold">Fig1:</span>
+        <span style="color:white"><b>This figure represents the heatmap of all the attributes used for data manipulation.</b></span>
+    </h6>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

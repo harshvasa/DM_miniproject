@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Forest Regression</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <h2 class="text-center font-underline"><u><i>Random Forest Regression</i></u></h2>
+
+    <div class="text-center mb-3">
+        <h3>
+            <span class="font-weight-bold">RMSE (Root Mean Square Value) is: </span>
+            <span class="text-muted">{{ rmse }}.</span>
+            <br>
+            <span class="text-muted">This means that the actual and predicted values of overall differ by a value of {{ rmse }}.</span>
+        </h3>
+    </div>
+    
+ 
+    <div class="text-center">
+        <img src="{% static 'images/ppo.png'%}" />
+        <h6>
+            <span class="font-weight-bold">Fig 1: </span>
+            <span class="text-muted">Above figure represents the distribution of players in terms of their overall.</span>
+        </h6>
+    </div>
+    
+    <div class="text-center">
+        <img src="{% static 'images/ppom.png'%}" />
+        <h6>
+            <span class="font-weight-bold">Fig 2: </span>
+            <span class="text-muted">Above figure represents the distribution of players in terms of their mean overall and stdev.</span>
+        </h6>
+    </div>
+    <div class="text-center">
+        <img src="{% static 'images/sp.png'%}" />
+        <h6>
+            <span class="font-weight-bold">Fig 3: </span>
+            <span class="text-muted">Above figure represents the scatter plot of the data.</span>
+        </h6>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
